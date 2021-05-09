@@ -204,6 +204,7 @@ send_message() {
 #签到
 ssp_autochenkin() {
     if [ "${users_array}" ]; then
+        echo -e $(users_array}
         user_count=1
         for user in ${users_array[@]}; do
             domain=$(echo ${user} | awk -F'----' '{print $1}')
